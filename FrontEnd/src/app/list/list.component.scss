@@ -1,0 +1,38 @@
+table, th , td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+  }
+  
+  table tr:nth-child(odd) {
+    background-color: #f1f1f1;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  .heading{
+    text-align: center;
+    color: blue;
+  }
+
+  .color-red{
+    font-weight: 500;
+    color: red;
+    background-color: #ffcdd2;
+  }
+  .color-green{
+    font-weight: 400;
+    color: green;
+    background-color: #c8e6c9;
+  }
+  .color-purple{
+    font-weight: 600;
+    color: purple;
+    background-color: #ffe0b2;
+  }
+  .color-cyan{
+    font-weight: bold;
+    color: cyan;
+    background-color: #e8eaf6;
+  }

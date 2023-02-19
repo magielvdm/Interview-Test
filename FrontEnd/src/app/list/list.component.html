@@ -1,0 +1,26 @@
+<h2 class="heading">Tour of Heroes</h2>
+
+<p *ngIf="message">{{ message }}</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Power</th>
+      <th>Strength</th>
+      <th>Intelligence</th>
+      <th>Stamina</th>
+    </tr>
+  </thead>
+  <tbody>    
+    <tr *ngFor="let hero of heroesList" [ngClass]="getRandomColorClass()">
+      <td>{{ hero.name }}</td>
+      <td>{{ hero.power }}</td>
+      <td *ngFor="let stat of hero.stats">{{stat.value}}</td>
+      <td style="text-align: center;"><input type="submit" value="Evolve" class="button" (click)="evolveHero(hero.name)"></td>
+       
+    </tr>
+  </tbody>
+</table>
+
+<router-outlet></router-outlet>
